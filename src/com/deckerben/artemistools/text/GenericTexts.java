@@ -1,6 +1,6 @@
 package com.deckerben.artemistools.text;
 
-import static com.deckerben.artemistools.text.Constants.makeArg;
+import static com.deckerben.artemistools.text.Argumentable.makeArg;
 
 public enum GenericTexts implements Argumentable{
 
