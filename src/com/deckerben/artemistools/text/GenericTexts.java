@@ -16,7 +16,7 @@ public enum GenericTexts implements Argumentable{
     }
 
     @Override
-    public String getMsg() {
+    public String toString() {
         return msg;
     }
 }
