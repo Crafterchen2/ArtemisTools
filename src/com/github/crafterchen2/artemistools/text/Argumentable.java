@@ -1,4 +1,4 @@
-package com.deckerben.artemistools.text;
+package com.github.crafterchen2.artemistools.text;
 
 /**
  * The {@code Argumentable} interface is used to replace each occurrence

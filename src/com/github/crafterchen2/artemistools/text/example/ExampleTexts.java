@@ -1,8 +1,8 @@
-package com.deckerben.artemistools.text.example;
+package com.github.crafterchen2.artemistools.text.example;
 
-import com.deckerben.artemistools.text.Argumentable;
+import com.github.crafterchen2.artemistools.text.Argumentable;
 
-import static com.deckerben.artemistools.text.Argumentable.makeArg;
+import static com.github.crafterchen2.artemistools.text.Argumentable.makeArg;
 
 public enum ExampleTexts implements Argumentable {
 
