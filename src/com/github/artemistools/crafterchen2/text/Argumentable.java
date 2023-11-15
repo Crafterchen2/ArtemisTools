@@ -27,15 +27,14 @@ package com.github.artemistools.crafterchen2.text;
  *     </pre>
  *</blockquote>
  *
- * @version     13 Nov 2023
+ * @version     15 Nov 2023
  * @author      Benjamin Decker (aka. Crafterchen2)
  * @see         GenericTexts
  */
 public interface Argumentable {
 
     /**
-     * Replaces every occurrence of {@code getPlaceHolder()+n} in the string representation of the object
-     * of the implementing class, where {@code n} represents the index of args.
+     * Replaces every occurrence of {@code getPlaceHolder()+n} in the {@code getSrc()} string, where {@code n} represents the index of args.
      * <p>
      * If {@code args} doesn't have enough elements, then the {@code getPlaceHolder()+m} will remain
      * as {@code getPlaceHolder()+m}, where {@code m} is an {@code int >= args.length}.
@@ -48,7 +47,7 @@ public interface Argumentable {
      * @see #withArgs(String, String, Object...)
      */
     default String withArgs(Object... args){
-        return withArgs(toString(),args);
+        return withArgs(getSrc(),args);
     }
 
     /**
@@ -112,5 +111,13 @@ public interface Argumentable {
         return getPlaceHolder() + n;
     }
 
+    /**
+     * Used as the default source string, if no special source string is given. Default
+     * implementation returns {@code toString()}.
+     * @return The source string.
+     */
+    default String getSrc(){
+        return toString();
+    }
 
 }
