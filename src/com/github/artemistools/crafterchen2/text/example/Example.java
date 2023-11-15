@@ -1,4 +1,4 @@
-package com.github.crafterchen2.artemistools.text.example;
+package com.github.artemistools.crafterchen2.text.example;
 
 public class Example {
 

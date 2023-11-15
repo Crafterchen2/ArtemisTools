@@ -1,6 +1,6 @@
-package com.github.crafterchen2.artemistools.text;
+package com.github.artemistools.crafterchen2.text;
 
-import static com.github.crafterchen2.artemistools.text.Argumentable.makeArg;
+import static com.github.artemistools.crafterchen2.text.Argumentable.makeArg;
 
 public enum GenericTexts implements Argumentable{
 
